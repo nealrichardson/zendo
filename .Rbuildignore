@@ -1,0 +1,12 @@
+^Rd2\.pdf$
+^Makefile$
+^.*\.tar\.gz$
+^.*\.Rcheck$
+^\.travis\.yml$
+^appveyor.yml$
+^.*\.log$
+^.*\.Rproj$
+^\.Rproj\.user$
+^pkgdown$
+^_pkgdown\.yml$
+^docs$
