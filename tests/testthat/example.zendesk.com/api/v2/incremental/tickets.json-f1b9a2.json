@@ -1,0 +1,12 @@
+{
+  "results": [
+    {
+        "id": 1
+    },
+    {
+        "id": 2
+    }
+  ],
+  "end_time": 1405469030,
+  "next_page": "https://example.zendesk.com/api/v2/incremental/tickets.json?start_time=1405469030"
+}

@@ -7,16 +7,6 @@
 
 Now that you've got a working package skeleton, there are a few steps to finish setting up all the integrations:
 
-### 1. Git(Hub)
-
-Go to https://github.com/nealrichardson and create a new repository. Then, in the directory where this package is, create your git repository from the command line, add the files, and push it to GitHub:
-
-    git init
-    git add --all
-    git commit -m "Initial commit of package skeleton"
-    git remote add origin git@github.com:nealrichardson/zendo.git
-    git push -u origin master
-
 ### 2. Travis
 
 Now you can go to [Travis](https://travis-ci.org/profile/nealrichardson) and turn on continuous integration for your new package. You may need to click the "Sync account" button to get your new package to show up in the list.
@@ -72,4 +62,4 @@ The repository includes a Makefile to facilitate some common tasks, if you're in
 
 ## See also
 
-[zendeskR](https://github.com/tcash21/zendeskR) is another Zendesk API client in R. It's not clear that it is actively supported anymore, and it's last CRAN update was in 2014. There is some overlap between what is implemented here and there. `zendo` offers support for the incremental export and search APIs.
+[zendeskR](https://github.com/tcash21/zendeskR) is another Zendesk API client in R. It's not clear that it is actively supported anymore, and it's last CRAN update was in 2014. There is some overlap between what is implemented here and there. `zendo` offers support for the incremental export and search APIs, as well as token authentication.

@@ -7,16 +7,28 @@
 get_all_tickets(start_time = 0)
 }
 \arguments{
-\item{start_time}{An integer Unix-time representation. This limits query
-results to tickets modified after that time. Default is \code{0}, meaning return
-all.}
+\item{start_time}{A timestamp (length 1), which may be
+\itemize{
+\item A date format (\code{POSIXct}, \code{POSIXlt}, or \code{Date})
+\item An ISO-8601-formatted string
+\item An integer Unix-time representation (number of seconds since 1970-01-01)
+This limits query results to tickets modified after that time. Default is
+\code{0}, meaning return all.
+}}
 }
 \value{
 A list of tickets.
 }
 \description{
-Download tickets
+adf
+}
+\details{
+This function uses the "incremental export" API
+(\url{https://developer.zendesk.com/rest_api/docs/core/incremental_export#incremental-ticket-export})
+because the official "tickets" API omits archived tickets, which may be of
+interest.
 }
 \seealso{
-This uses the "incremental export" API (\url{https://developer.zendesk.com/rest_api/docs/core/incremental_export#incremental-ticket-export}).
+\code{\link[=search_tickets]{search_tickets()}} if you want to filter by something other than
+timestamp.
 }
