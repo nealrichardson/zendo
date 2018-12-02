@@ -1,4 +1,17 @@
 #' HTTP methods for the Zendesk API
+#'
+#' `zd_GET()`, `zd_POST()`, and the other HTTP method functions are convenience
+#' wrappers around the `httr` functions. They include configuration for this
+#' API, and they understand how to handle the responses that the API returns.
+#' `zd_api()` is the function they call internally.
+#'
+#' @param verb for `zd_api()`, the string HTTP method to call
+#' @param url string URL to request
+#' @param config list or `httr::config()` object with any custom request
+#' headers, for example.
+#' @param ... Additional arguments to pass to the `httr` functions, such as
+#' `query` or `body`
+#' @return The parsed response body content, if the request was successful.
 #' @importFrom httr GET PUT PATCH POST DELETE
 #' @export
 zd_api <- function (verb, url, config=list(), ...) {
@@ -49,7 +62,6 @@ get_header <- function(x, headers, default=NULL) {
     }
 }
 
-#' @export
 zd_url <- function (...) {
     base <- getOption(
         "zendesk.url",

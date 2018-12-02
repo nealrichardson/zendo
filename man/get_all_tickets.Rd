@@ -20,9 +20,6 @@ This limits query results to tickets modified after that time. Default is
 A list of tickets.
 }
 \description{
-adf
-}
-\details{
 This function uses the "incremental export" API
 (\url{https://developer.zendesk.com/rest_api/docs/core/incremental_export#incremental-ticket-export})
 because the official "tickets" API omits archived tickets, which may be of

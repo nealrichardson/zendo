@@ -5,7 +5,7 @@ to_unixtime <- function (x) {
     if (is.character(x)) {
         x <- from8601(x)
     }
-    if (is.POSIXt(x) || is.Date(x)) {
+    if (inherits(x, c("POSIXt", "Date"))) {
         x <- as.POSIXct(x)
     }
     x <- as.integer(x)
@@ -22,6 +22,7 @@ from_unixtime <- function (x) {
 
 # Borrowed/modified from `crunch`
 # If this is a big deal, use the parsedate package
+#' @importFrom stats na.omit
 from8601 <- function (x) {
     # Parse ISO-8601-formatted date strings and return POSIXlt
     if (all(grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", na.omit(x)))) {

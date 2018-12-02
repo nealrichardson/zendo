@@ -1,23 +1,8 @@
 # zendo: An R client for the [Zendesk](https://zendesk.com/) [API](https://developer.zendesk.com/rest_api/docs/core/introduction)
 
-[![Build Status](https://travis-ci.org/nealrichardson/zendo.png?branch=master)](https://travis-ci.org/nealrichardson/zendo)  [![codecov](https://codecov.io/gh/nealrichardson/zendo/branch/master/graph/badge.svg)](https://codecov.io/gh/nealrichardson/zendo)
+[![Build Status](https://travis-ci.org/nealrichardson/zendo.png?branch=master)](https://travis-ci.org/nealrichardson/zendo) [![Build status](https://ci.appveyor.com/api/projects/status/tnkfvuqyucxypfeg/branch/master?svg=true)](https://ci.appveyor.com/project/nealrichardson/zendo/branch/master)
+ [![codecov](https://codecov.io/gh/nealrichardson/zendo/branch/master/graph/badge.svg)](https://codecov.io/gh/nealrichardson/zendo)
 [![cran](https://www.r-pkg.org/badges/version-last-release/zendo)](https://cran.r-project.org/package=zendo)
-
-## How to finish setting up your new package
-
-Now that you've got a working package skeleton, there are a few steps to finish setting up all the integrations:
-
-### 2. Travis
-
-Now you can go to [Travis](https://travis-ci.org/profile/nealrichardson) and turn on continuous integration for your new package. You may need to click the "Sync account" button to get your new package to show up in the list.
-
-If you have a codecov.io account, running your tests on Travis will trigger the code coverage job. No additional configuration is necessary
-
-### 3. Appveyor
-
-Go to [Appveyor's new project page](https://ci.appveyor.com/projects/new) and select your new repository from the list. Then you can go to the [badges](https://ci.appveyor.com/project/nealrichardson/zendo/settings/badges) page, copy the markdown code it provides, and paste it up with the other badges above. (Their badge API has a random token in it, so `skeletor` can't include it in the template for you.)
-
-### 4. Delete this "How to finish setting up your new package" section from your README.md
 
 ## Installing
 
@@ -25,10 +10,10 @@ Go to [Appveyor's new project page](https://ci.appveyor.com/projects/new) and se
 
     install.packages("zendo") -->
 
-The pre-release version of the package can be pulled from GitHub using the [devtools](https://github.com/r-lib/devtools) package:
+The pre-release version of the package can be pulled from GitHub using the [removtes](https://github.com/r-lib/remotes) package:
 
-    # install.packages("devtools")
-    devtools::install_github("nealrichardson/zendo")
+    # install.packages("remotes")
+    remotes::install_github("nealrichardson/zendo")
 
 ## Getting started
 

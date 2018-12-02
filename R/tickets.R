@@ -1,17 +1,15 @@
 #' Download tickets
-#' 
-#' adf
-#' 
+#'
 #' This function uses the "incremental export" API
 #' (\url{https://developer.zendesk.com/rest_api/docs/core/incremental_export#incremental-ticket-export})
 #' because the official "tickets" API omits archived tickets, which may be of
-#' interest. 
+#' interest.
 #'
 #' @param start_time A timestamp (length 1), which may be
 #' * A date format (`POSIXct`, `POSIXlt`, or `Date`)
 #' * An ISO-8601-formatted string
 #' * An integer Unix-time representation (number of seconds since 1970-01-01)
-#' This limits query results to tickets modified after that time. Default is 
+#' This limits query results to tickets modified after that time. Default is
 #' `0`, meaning return all.
 #' @return A list of tickets.
 #' @export

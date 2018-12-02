@@ -21,6 +21,23 @@ zd_POST(url, ...)
 
 zd_DELETE(url, ...)
 }
+\arguments{
+\item{verb}{for \code{zd_api()}, the string HTTP method to call}
+
+\item{url}{string URL to request}
+
+\item{config}{list or \code{httr::config()} object with any custom request
+headers, for example.}
+
+\item{...}{Additional arguments to pass to the \code{httr} functions, such as
+\code{query} or \code{body}}
+}
+\value{
+The parsed response body content, if the request was successful.
+}
 \description{
-HTTP methods for the Zendesk API
+\code{zd_GET()}, \code{zd_POST()}, and the other HTTP method functions are convenience
+wrappers around the \code{httr} functions. They include configuration for this
+API, and they understand how to handle the responses that the API returns.
+\code{zd_api()} is the function they call internally.
 }
