@@ -10,7 +10,7 @@
 
     install.packages("zendo") -->
 
-The pre-release version of the package can be pulled from GitHub using the [removtes](https://github.com/r-lib/remotes) package:
+The pre-release version of the package can be pulled from GitHub using the [remotes](https://github.com/r-lib/remotes) package:
 
     # install.packages("remotes")
     remotes::install_github("nealrichardson/zendo")
