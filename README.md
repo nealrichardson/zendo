@@ -12,8 +12,10 @@
 
 The pre-release version of the package can be pulled from GitHub using the [remotes](https://github.com/r-lib/remotes) package:
 
-    # install.packages("remotes")
-    remotes::install_github("nealrichardson/zendo")
+```r
+# install.packages("remotes")
+remotes::install_github("nealrichardson/zendo")
+```
 
 ## Getting started
 
